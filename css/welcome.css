@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/background.jpg);
+}
+body::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+body::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container
+{
+    position: relative;
+    min-height: calc(100vh - 200px);
+    min-height: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding: 50px;
+}
+.container .card
+{
+    position: relative;
+    width: 280px;
+    min-height: 400px;
+    margin: 30px;
+    background: rgba(84,84,22,0.2);
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0 0 0 / 10%);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.container .card .content
+{
+    padding: 20px;
+    text-align: center;
+    transition: translateY(100px);
+    opacity: 1;
+    transition: 0.5s;
+}
+.container .card .content h2
+{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.container .card .content h3
+{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+.container .card .content p
+{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.container .card .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+header
+{
+    position: absolute;
+    top: -73px;
+    right: -88px;
+    left: -88px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(255,255,255,0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+header .logo
+{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+}
+header ul
+{
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+    margin: 0 10px;
+}
+header ul li a
+{
+   text-decoration: none;
+   font-weight: 500;
+   color: black;
+   padding: 8px 15px;
+   border-radius: 25px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
