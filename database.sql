@@ -9,8 +9,7 @@ CREATE TABLE users (
   usersuid varchar(128) NOT NULL,
   userspwd varchar(256) NOT NULL,
   userscode int NOT NULL,
-  usersstatus varchar(128) NOT NULL,
-  userjoinon datetime
+  usersstatus varchar(128) NOT NULL
 );
 
 CREATE TABLE profileimg (
